@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 ```env
 DATABASE_URL="postgresql://your_db_user:password@your_host:5432/your_db"
-AZURE_OPENAI_API_KEY="gsk_your_primary_groq_key"
+GROQ_API_KEY="gsk_your_primary_groq_key"
 GROQ_API_KEY_BACKUP_A="gsk_your_backup_groq_key_1"
 GROQ_API_KEY_BACKUP_B="gsk_your_backup_groq_key_2"
 
@@ -172,7 +172,7 @@ docker build -t debtiq-app .
 # 2. Run the image while passing your environmental variables
 docker run -p 7860:7860 \
   -e DATABASE_URL="your_postgres_link" \
-  -e AZURE_OPENAI_API_KEY="your_groq_key" \
+  -e GROQ_API_KEY="your_groq_key" \
   debtiq-app
 
 ```
